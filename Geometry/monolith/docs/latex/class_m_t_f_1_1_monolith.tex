@@ -1,0 +1,188 @@
+\section{\-M\-T\-F\-:\-:\-Monolith \-Class \-Reference}
+\label{class_m_t_f_1_1_monolith}\index{\-M\-T\-F\-::\-Monolith@{\-M\-T\-F\-::\-Monolith}}
+
+
+\-This class is the primary interface with the \doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} \-Tracking \-Framework.  
+
+
+
+
+{\ttfamily \#include $<$\-Monolith.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Monolith} ({\bf \-Camera} $\ast$camera, int port)
+\begin{DoxyCompactList}\small\item\em \doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} \-Constructor. \end{DoxyCompactList}\item 
+{\bf \-Monolith} ({\bf \-Camera} $\ast$camera, int port, int smoothing)
+\begin{DoxyCompactList}\small\item\em \doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} \-Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Monolith} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} \-Deconstructor. \end{DoxyCompactList}\item 
+{\bf \-Head} {\bf \-Get\-Head} ()
+\begin{DoxyCompactList}\small\item\em \-Retrieve a copy of the current \doxyref{\-Head}{p.}{class_m_t_f_1_1_head} object. \end{DoxyCompactList}\item 
+{\bf \-Wand} {\bf \-Get\-Wand} ()
+\begin{DoxyCompactList}\small\item\em \-Retrieve a copy of the current \doxyref{\-Wand}{p.}{class_m_t_f_1_1_wand} object. \end{DoxyCompactList}\item 
+{\bf \-Camera} $\ast$ {\bf \-Get\-Camera} ()
+\begin{DoxyCompactList}\small\item\em \-Retrieve the \doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} object. \end{DoxyCompactList}\item 
+{\bf \-Display} $\ast$ {\bf \-Get\-Display} ()
+\begin{DoxyCompactList}\small\item\em \-Retrieve the \doxyref{\-Display}{p.}{class_m_t_f_1_1_display} object. \end{DoxyCompactList}\item 
+void {\bf \-Shutdown\-Tracking} ()
+\begin{DoxyCompactList}\small\item\em \-Stop processing tracker updates and threads associated with tracking. \end{DoxyCompactList}\item 
+bool {\bf \-Is\-Running} ()
+\begin{DoxyCompactList}\small\item\em \-Check if \doxyref{\-Tracker\-Update}{p.}{class_m_t_f_1_1_tracker_update} is running. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This class is the primary interface with the \doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} \-Tracking \-Framework. 
+
+\-This class provides methods to get the current \doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera}, \doxyref{\-Head}{p.}{class_m_t_f_1_1_head}, and \doxyref{\-Wand}{p.}{class_m_t_f_1_1_wand} objects. \-It is also responsible for starting the tracker updates and turning them off. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{\-M\-T\-F\-::\-Monolith@{\-M\-T\-F\-::\-Monolith}!\-Monolith@{\-Monolith}}
+\index{\-Monolith@{\-Monolith}!MTF::Monolith@{\-M\-T\-F\-::\-Monolith}}
+\subsubsection[{\-Monolith}]{\setlength{\rightskip}{0pt plus 5cm}\-M\-T\-F\-::\-Monolith\-::\-Monolith (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Camera} $\ast$}]{camera, }
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_monolith_acfaa64c41984b9305d1a5cd91de46cbc}
+
+
+\doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} \-Constructor. 
+
+\-This will create a \doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} object with the given camera object and port number. \-Smoothing for the wand will be disabled.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em camera} & \doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} object that contains the inital camera to be used in the framework \\
+\hline
+{\em port} & \-The port number the \-A\-R\-T \-Tracker is listening on \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Monolith@{\-M\-T\-F\-::\-Monolith}!\-Monolith@{\-Monolith}}
+\index{\-Monolith@{\-Monolith}!MTF::Monolith@{\-M\-T\-F\-::\-Monolith}}
+\subsubsection[{\-Monolith}]{\setlength{\rightskip}{0pt plus 5cm}\-M\-T\-F\-::\-Monolith\-::\-Monolith (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Camera} $\ast$}]{camera, }
+\item[{int}]{port, }
+\item[{int}]{smoothing}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_monolith_a491cd21f027dcf43c1e24fc2b9d9658d}
+
+
+\doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} \-Constructor. 
+
+\-This will create a \doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} object with the given camera object, port number, and amount of smoothing.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em camera} & \doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} object that contains the inital camera to be used in the framework \\
+\hline
+{\em port} & \-The port number the \-A\-R\-T \-Tracker is listening on \\
+\hline
+{\em smoothing} & \-Number of previous updates to include when average the wand's position and view vectors \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Monolith@{\-M\-T\-F\-::\-Monolith}!$\sim$\-Monolith@{$\sim$\-Monolith}}
+\index{$\sim$\-Monolith@{$\sim$\-Monolith}!MTF::Monolith@{\-M\-T\-F\-::\-Monolith}}
+\subsubsection[{$\sim$\-Monolith}]{\setlength{\rightskip}{0pt plus 5cm}\-M\-T\-F\-::\-Monolith\-::$\sim$\-Monolith (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_monolith_a0f9aa0190aba267e6ab2a04f9163a302}
+
+
+\doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} \-Deconstructor. 
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-M\-T\-F\-::\-Monolith@{\-M\-T\-F\-::\-Monolith}!\-Get\-Camera@{\-Get\-Camera}}
+\index{\-Get\-Camera@{\-Get\-Camera}!MTF::Monolith@{\-M\-T\-F\-::\-Monolith}}
+\subsubsection[{\-Get\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Camera} $\ast$ \-M\-T\-F\-::\-Monolith\-::\-Get\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_monolith_a9e50fe8b5bad8e54198fe817b6295477}
+
+
+\-Retrieve the \doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} object. 
+
+\-This \doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} will store the position and orientation that is used for rendering. \-This camera should be modified if you wish to make changes in the camera. \-This camera should also be used to retrieve valid view and projection matrices.
+
+\begin{DoxyReturn}{\-Returns}
+\-The \doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} object used by the framework 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Monolith@{\-M\-T\-F\-::\-Monolith}!\-Get\-Display@{\-Get\-Display}}
+\index{\-Get\-Display@{\-Get\-Display}!MTF::Monolith@{\-M\-T\-F\-::\-Monolith}}
+\subsubsection[{\-Get\-Display}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Display} $\ast$ \-M\-T\-F\-::\-Monolith\-::\-Get\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_monolith_aac7f9f6a14ea1b625559b1ef5e296541}
+
+
+\-Retrieve the \doxyref{\-Display}{p.}{class_m_t_f_1_1_display} object. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The \doxyref{\-Display}{p.}{class_m_t_f_1_1_display} object used by the framework 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Monolith@{\-M\-T\-F\-::\-Monolith}!\-Get\-Head@{\-Get\-Head}}
+\index{\-Get\-Head@{\-Get\-Head}!MTF::Monolith@{\-M\-T\-F\-::\-Monolith}}
+\subsubsection[{\-Get\-Head}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Head} \-M\-T\-F\-::\-Monolith\-::\-Get\-Head (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_monolith_adc0e268792d91b2c2a61da505aee620a}
+
+
+\-Retrieve a copy of the current \doxyref{\-Head}{p.}{class_m_t_f_1_1_head} object. 
+
+\begin{DoxyReturn}{\-Returns}
+\-A copy of the current \doxyref{\-Head}{p.}{class_m_t_f_1_1_head} object 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Monolith@{\-M\-T\-F\-::\-Monolith}!\-Get\-Wand@{\-Get\-Wand}}
+\index{\-Get\-Wand@{\-Get\-Wand}!MTF::Monolith@{\-M\-T\-F\-::\-Monolith}}
+\subsubsection[{\-Get\-Wand}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Wand} \-M\-T\-F\-::\-Monolith\-::\-Get\-Wand (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_monolith_a2e37d19519a2d348bdc560f093d067b1}
+
+
+\-Retrieve a copy of the current \doxyref{\-Wand}{p.}{class_m_t_f_1_1_wand} object. 
+
+\begin{DoxyReturn}{\-Returns}
+\-A copy of the current \doxyref{\-Wand}{p.}{class_m_t_f_1_1_wand} object 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Monolith@{\-M\-T\-F\-::\-Monolith}!\-Is\-Running@{\-Is\-Running}}
+\index{\-Is\-Running@{\-Is\-Running}!MTF::Monolith@{\-M\-T\-F\-::\-Monolith}}
+\subsubsection[{\-Is\-Running}]{\setlength{\rightskip}{0pt plus 5cm}bool \-M\-T\-F\-::\-Monolith\-::\-Is\-Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_monolith_a2b0e8aa8bbc094b1eb6750963bdeefbc}
+
+
+\-Check if \doxyref{\-Tracker\-Update}{p.}{class_m_t_f_1_1_tracker_update} is running. 
+
+\begin{DoxyReturn}{\-Returns}
+\-Returns whether the tracker updates will be processed or not 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Monolith@{\-M\-T\-F\-::\-Monolith}!\-Shutdown\-Tracking@{\-Shutdown\-Tracking}}
+\index{\-Shutdown\-Tracking@{\-Shutdown\-Tracking}!MTF::Monolith@{\-M\-T\-F\-::\-Monolith}}
+\subsubsection[{\-Shutdown\-Tracking}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Monolith\-::\-Shutdown\-Tracking (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_monolith_a10a8c0617e7fc87e37ceab065f47b31e}
+
+
+\-Stop processing tracker updates and threads associated with tracking. 
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+{\bf \-Monolith.\-h}\item 
+{\bf \-Monolith.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BD46C2A8-87CE-4320-909A-033E92D6551A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Geometry</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\PureDevSoftware\MemPro\MemProLib;C:\libraries\Monolith\include;C:\libraries\boost_1_46_1;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\PureDevSoftware\MemPro\MemProLib;C:\libraries\Monolith\lib;C:\Development\boost_1_75_0\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\libraries\Monolith\include;C:\libraries\boost_1_46_1;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\libraries\Monolith\lib;C:\libraries\boost_1_46_1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalIncludeDirectories>$(SolutionDir)GL\GLEW\include;$(SolutionDir)GL\freeGlut\include;C:\Development\boost_1_75_0;$(SolutionDir)\monolith\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;freeglut.lib;glew32.lib;MonolithDebug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)GL\GLEW\lib\Release\Win32;$(SolutionDir)GL\freeglut\lib;$(SolutionDir)\monolith\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glut32.lib;glew32.lib;Monolith.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CrossSection.h" />
+    <ClInclude Include="CrossSectionModule.h" />
+    <ClInclude Include="BoxModule.h" />
+    <ClInclude Include="Face.h" />
+    <ClInclude Include="GeoModule.h" />
+    <ClInclude Include="GLMenu.h" />
+    <ClInclude Include="GLMenuItem.h" />
+    <ClInclude Include="LineSegment.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="PolygonBox.h" />
+    <ClInclude Include="GeometryViewer.h" />
+    <ClInclude Include="MonolithApp.h" />
+    <ClInclude Include="Polygon3D.h" />
+    <ClInclude Include="PolygonCone.h" />
+    <ClInclude Include="PolygonCylinder.h" />
+    <ClInclude Include="PolygonSphere.h" />
+    <ClInclude Include="Quad.h" />
+    <ClInclude Include="Tri.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CrossSection.cpp" />
+    <ClCompile Include="CrossSectionModule.cpp" />
+    <ClCompile Include="BoxModule.cpp" />
+    <ClCompile Include="Face.cpp" />
+    <ClCompile Include="GeoModule.cpp" />
+    <ClCompile Include="GLMenu.cpp" />
+    <ClCompile Include="GLMenuItem.cpp" />
+    <ClCompile Include="LineSegment.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="PolygonBox.cpp" />
+    <ClCompile Include="GeometryViewer.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MonolithApp.cpp" />
+    <ClCompile Include="Polygon3D.cpp" />
+    <ClCompile Include="PolygonCone.cpp" />
+    <ClCompile Include="PolygonCylinder.cpp" />
+    <ClCompile Include="PolygonSphere.cpp" />
+    <ClCompile Include="Quad.cpp" />
+    <ClCompile Include="Tri.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

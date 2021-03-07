@@ -1,0 +1,210 @@
+\section{\-M\-T\-F\-:\-:\-Head \-Class \-Reference}
+\label{class_m_t_f_1_1_head}\index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}}
+
+
+\-This class handles head tracking for the framework.  
+
+
+
+
+{\ttfamily \#include $<$\-Head.\-h$>$}
+
+
+
+\-Inherits {\bf \-M\-T\-F\-::\-Tracking\-Body}.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Head} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{\-Head}{p.}{class_m_t_f_1_1_head} \-Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Head} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{\-Head}{p.}{class_m_t_f_1_1_head} \-Deconstructor. \end{DoxyCompactList}\item 
+{\bf \-Vector3} {\bf \-Get\-Position} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the current position of the head. \end{DoxyCompactList}\item 
+{\bf \-Vector3} {\bf \-Get\-View\-Vector} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the current view direction of the head. \end{DoxyCompactList}\item 
+{\bf \-Vector3} {\bf \-Get\-Up\-Vector} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the current up direction of the head. \end{DoxyCompactList}\item 
+{\bf \-Vector3} {\bf \-Get\-Right\-Vector} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the current right direction of the head. \end{DoxyCompactList}\item 
+{\bf \-Matrix4} {\bf \-Get\-Transform\-Matrix} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the current transform matrix for the head. \end{DoxyCompactList}\item 
+bool {\bf \-Is\-Tracked} ()
+\begin{DoxyCompactList}\small\item\em \-Returns whether the \doxyref{\-Head}{p.}{class_m_t_f_1_1_head} is being tracked or not. \end{DoxyCompactList}\item 
+void {\bf \-Update} (\-D\-Track\-\_\-\-Body\-\_\-\-Type\-\_\-d data)
+\begin{DoxyCompactList}\small\item\em \-Updates the values of the \-Head's position and orientation. \end{DoxyCompactList}\item 
+{\bf \-Head} {\bf \-Get\-Copy} ()
+\begin{DoxyCompactList}\small\item\em \-Returns a copy of this \doxyref{\-Head}{p.}{class_m_t_f_1_1_head}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This class handles head tracking for the framework. 
+
+\-This class derives from \doxyref{\-Tracking\-Body}{p.}{class_m_t_f_1_1_tracking_body} and implements the methods needed to perform head tracking operations. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}!\-Head@{\-Head}}
+\index{\-Head@{\-Head}!MTF::Head@{\-M\-T\-F\-::\-Head}}
+\subsubsection[{\-Head}]{\setlength{\rightskip}{0pt plus 5cm}\-M\-T\-F\-::\-Head\-::\-Head (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_head_a52de35020667cfb2167833c4d33cb18c}
+
+
+\doxyref{\-Head}{p.}{class_m_t_f_1_1_head} \-Constructor. 
+
+\-Creates a \doxyref{\-Head}{p.}{class_m_t_f_1_1_head} object defaulting to not tracked, a position five feet out and up from the screen's origin, looking directly at the screen. \index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}!$\sim$\-Head@{$\sim$\-Head}}
+\index{$\sim$\-Head@{$\sim$\-Head}!MTF::Head@{\-M\-T\-F\-::\-Head}}
+\subsubsection[{$\sim$\-Head}]{\setlength{\rightskip}{0pt plus 5cm}\-M\-T\-F\-::\-Head\-::$\sim$\-Head (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_head_a0c51b40278c91946c85783b77d91b935}
+
+
+\doxyref{\-Head}{p.}{class_m_t_f_1_1_head} \-Deconstructor. 
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}!\-Get\-Copy@{\-Get\-Copy}}
+\index{\-Get\-Copy@{\-Get\-Copy}!MTF::Head@{\-M\-T\-F\-::\-Head}}
+\subsubsection[{\-Get\-Copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Head} \-M\-T\-F\-::\-Head\-::\-Get\-Copy (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_head_ad47f4d005e8e83c30d1a4e55f260cc77}
+
+
+\-Returns a copy of this \doxyref{\-Head}{p.}{class_m_t_f_1_1_head}. 
+
+\begin{DoxyReturn}{\-Returns}
+\-A copy of the current \doxyref{\-Head}{p.}{class_m_t_f_1_1_head} 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}!\-Get\-Position@{\-Get\-Position}}
+\index{\-Get\-Position@{\-Get\-Position}!MTF::Head@{\-M\-T\-F\-::\-Head}}
+\subsubsection[{\-Get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Vector3} \-M\-T\-F\-::\-Head\-::\-Get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_m_t_f_1_1_head_a7b50cde5367b8bb63e4560de8f6a55e6}
+
+
+\-Returns the current position of the head. 
+
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Vector3}{p.}{class_m_t_f_1_1_vector3} containing the position of the head 
+\end{DoxyReturn}
+
+
+\-Implements {\bf \-M\-T\-F\-::\-Tracking\-Body} \doxyref{}{p.}{class_m_t_f_1_1_tracking_body_afa35e22cec4a324517137baff722183d}.
+
+\index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}!\-Get\-Right\-Vector@{\-Get\-Right\-Vector}}
+\index{\-Get\-Right\-Vector@{\-Get\-Right\-Vector}!MTF::Head@{\-M\-T\-F\-::\-Head}}
+\subsubsection[{\-Get\-Right\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Vector3} \-M\-T\-F\-::\-Head\-::\-Get\-Right\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_m_t_f_1_1_head_a660cf4e4d4ad517746d60319a3a75132}
+
+
+\-Returns the current right direction of the head. 
+
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Vector3}{p.}{class_m_t_f_1_1_vector3} containing the right direction of the head 
+\end{DoxyReturn}
+
+
+\-Implements {\bf \-M\-T\-F\-::\-Tracking\-Body} \doxyref{}{p.}{class_m_t_f_1_1_tracking_body_a7a818c9937f59d8cc4ef75c5cf849a31}.
+
+\index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}!\-Get\-Transform\-Matrix@{\-Get\-Transform\-Matrix}}
+\index{\-Get\-Transform\-Matrix@{\-Get\-Transform\-Matrix}!MTF::Head@{\-M\-T\-F\-::\-Head}}
+\subsubsection[{\-Get\-Transform\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Matrix4} \-M\-T\-F\-::\-Head\-::\-Get\-Transform\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_m_t_f_1_1_head_a0d96199c522ca53250c0a3ee5128f7c9}
+
+
+\-Returns the current transform matrix for the head. 
+
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Matrix4}{p.}{class_m_t_f_1_1_matrix4} containing the transform matrix for the head 
+\end{DoxyReturn}
+
+
+\-Implements {\bf \-M\-T\-F\-::\-Tracking\-Body} \doxyref{}{p.}{class_m_t_f_1_1_tracking_body_ab5671b57af282b1133332d2f55896835}.
+
+\index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}!\-Get\-Up\-Vector@{\-Get\-Up\-Vector}}
+\index{\-Get\-Up\-Vector@{\-Get\-Up\-Vector}!MTF::Head@{\-M\-T\-F\-::\-Head}}
+\subsubsection[{\-Get\-Up\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Vector3} \-M\-T\-F\-::\-Head\-::\-Get\-Up\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_m_t_f_1_1_head_a73f1565724fec61547b5d3cd873b87f0}
+
+
+\-Returns the current up direction of the head. 
+
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Vector3}{p.}{class_m_t_f_1_1_vector3} containing the up direction of the head 
+\end{DoxyReturn}
+
+
+\-Implements {\bf \-M\-T\-F\-::\-Tracking\-Body} \doxyref{}{p.}{class_m_t_f_1_1_tracking_body_aa7f2dda6048dcac6a2af6bf318953986}.
+
+\index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}!\-Get\-View\-Vector@{\-Get\-View\-Vector}}
+\index{\-Get\-View\-Vector@{\-Get\-View\-Vector}!MTF::Head@{\-M\-T\-F\-::\-Head}}
+\subsubsection[{\-Get\-View\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Vector3} \-M\-T\-F\-::\-Head\-::\-Get\-View\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_m_t_f_1_1_head_af55587ae2636231ddf56fd191562f24d}
+
+
+\-Returns the current view direction of the head. 
+
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Vector3}{p.}{class_m_t_f_1_1_vector3} containing the view direction of the head 
+\end{DoxyReturn}
+
+
+\-Implements {\bf \-M\-T\-F\-::\-Tracking\-Body} \doxyref{}{p.}{class_m_t_f_1_1_tracking_body_a73542fbb193e4b5d0b78561ca9970f8e}.
+
+\index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}!\-Is\-Tracked@{\-Is\-Tracked}}
+\index{\-Is\-Tracked@{\-Is\-Tracked}!MTF::Head@{\-M\-T\-F\-::\-Head}}
+\subsubsection[{\-Is\-Tracked}]{\setlength{\rightskip}{0pt plus 5cm}bool \-M\-T\-F\-::\-Head\-::\-Is\-Tracked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [virtual]}}\label{class_m_t_f_1_1_head_a9674eae8a77b72f13c71ab2aaec9080b}
+
+
+\-Returns whether the \doxyref{\-Head}{p.}{class_m_t_f_1_1_head} is being tracked or not. 
+
+\begin{DoxyReturn}{\-Returns}
+\-A bool indicating if the \doxyref{\-Head}{p.}{class_m_t_f_1_1_head} is tracked or not 
+\end{DoxyReturn}
+
+
+\-Implements {\bf \-M\-T\-F\-::\-Tracking\-Body} \doxyref{}{p.}{class_m_t_f_1_1_tracking_body_a6ec6361dbe9c80346301c47539148928}.
+
+\index{\-M\-T\-F\-::\-Head@{\-M\-T\-F\-::\-Head}!\-Update@{\-Update}}
+\index{\-Update@{\-Update}!MTF::Head@{\-M\-T\-F\-::\-Head}}
+\subsubsection[{\-Update}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Head\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{\-D\-Track\-\_\-\-Body\-\_\-\-Type\-\_\-d}]{data}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_head_ad577dfff91986cf0805d0367774f4412}
+
+
+\-Updates the values of the \-Head's position and orientation. 
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+{\bf \-Head.\-h}\item 
+{\bf \-Head.\-cpp}\end{DoxyCompactItemize}
