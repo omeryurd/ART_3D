@@ -1,0 +1,151 @@
+\section{\-M\-T\-F\-:\-:\-Tracking\-Body \-Class \-Reference}
+\label{class_m_t_f_1_1_tracking_body}\index{\-M\-T\-F\-::\-Tracking\-Body@{\-M\-T\-F\-::\-Tracking\-Body}}
+
+
+\-This class contains a pure virtual interface for tracking bodies.  
+
+
+
+
+{\ttfamily \#include $<$\-Tracking\-Body.\-h$>$}
+
+
+
+\-Inherited by {\bf \-M\-T\-F\-::\-Head}{\ttfamily  [private]}, and {\bf \-M\-T\-F\-::\-Wand}{\ttfamily  [private]}.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bf \-Vector3} {\bf \-Get\-Position} ()=0
+\begin{DoxyCompactList}\small\item\em \-Pure virtual method for retrieving the position of a tracking device. \end{DoxyCompactList}\item 
+virtual {\bf \-Vector3} {\bf \-Get\-View\-Vector} ()=0
+\begin{DoxyCompactList}\small\item\em \-Pure virtual method for retrieving the view direction of a tracking device. \end{DoxyCompactList}\item 
+virtual {\bf \-Vector3} {\bf \-Get\-Up\-Vector} ()=0
+\begin{DoxyCompactList}\small\item\em \-Pure virtual method for retrieving the up direction of a tracking device. \end{DoxyCompactList}\item 
+virtual {\bf \-Vector3} {\bf \-Get\-Right\-Vector} ()=0
+\begin{DoxyCompactList}\small\item\em \-Pure virtual method for retrieving the right direction of a tracking device. \end{DoxyCompactList}\item 
+virtual {\bf \-Matrix4} {\bf \-Get\-Transform\-Matrix} ()=0
+\begin{DoxyCompactList}\small\item\em \-Pure virtual method for retrieving a transform matrix for a tracking device's position and orientation. \end{DoxyCompactList}\item 
+virtual bool {\bf \-Is\-Tracked} ()=0
+\begin{DoxyCompactList}\small\item\em \-Pure virtual method for checking if a tracking device is currently tracked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This class contains a pure virtual interface for tracking bodies. 
+
+\-Any tracking devices used in the framework must implement the \doxyref{\-Tracking\-Body}{p.}{class_m_t_f_1_1_tracking_body} interface. \-This interface defines a few key methods that all tracking devices share in common. 
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-M\-T\-F\-::\-Tracking\-Body@{\-M\-T\-F\-::\-Tracking\-Body}!\-Get\-Position@{\-Get\-Position}}
+\index{\-Get\-Position@{\-Get\-Position}!MTF::TrackingBody@{\-M\-T\-F\-::\-Tracking\-Body}}
+\subsubsection[{\-Get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Vector3} \-M\-T\-F\-::\-Tracking\-Body\-::\-Get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [pure virtual]}}\label{class_m_t_f_1_1_tracking_body_afa35e22cec4a324517137baff722183d}
+
+
+\-Pure virtual method for retrieving the position of a tracking device. 
+
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Vector3}{p.}{class_m_t_f_1_1_vector3} containing the position of the tracking device 
+\end{DoxyReturn}
+
+
+\-Implemented in {\bf \-M\-T\-F\-::\-Wand} \doxyref{}{p.}{class_m_t_f_1_1_wand_af6ba59df9f09ecd762f73c6281101cf8}, and {\bf \-M\-T\-F\-::\-Head} \doxyref{}{p.}{class_m_t_f_1_1_head_a7b50cde5367b8bb63e4560de8f6a55e6}.
+
+\index{\-M\-T\-F\-::\-Tracking\-Body@{\-M\-T\-F\-::\-Tracking\-Body}!\-Get\-Right\-Vector@{\-Get\-Right\-Vector}}
+\index{\-Get\-Right\-Vector@{\-Get\-Right\-Vector}!MTF::TrackingBody@{\-M\-T\-F\-::\-Tracking\-Body}}
+\subsubsection[{\-Get\-Right\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Vector3} \-M\-T\-F\-::\-Tracking\-Body\-::\-Get\-Right\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [pure virtual]}}\label{class_m_t_f_1_1_tracking_body_a7a818c9937f59d8cc4ef75c5cf849a31}
+
+
+\-Pure virtual method for retrieving the right direction of a tracking device. 
+
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Vector3}{p.}{class_m_t_f_1_1_vector3} containing the right direction of the tracking device 
+\end{DoxyReturn}
+
+
+\-Implemented in {\bf \-M\-T\-F\-::\-Wand} \doxyref{}{p.}{class_m_t_f_1_1_wand_a5b683d9318927b52bdab50f5f9e00041}, and {\bf \-M\-T\-F\-::\-Head} \doxyref{}{p.}{class_m_t_f_1_1_head_a660cf4e4d4ad517746d60319a3a75132}.
+
+\index{\-M\-T\-F\-::\-Tracking\-Body@{\-M\-T\-F\-::\-Tracking\-Body}!\-Get\-Transform\-Matrix@{\-Get\-Transform\-Matrix}}
+\index{\-Get\-Transform\-Matrix@{\-Get\-Transform\-Matrix}!MTF::TrackingBody@{\-M\-T\-F\-::\-Tracking\-Body}}
+\subsubsection[{\-Get\-Transform\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Matrix4} \-M\-T\-F\-::\-Tracking\-Body\-::\-Get\-Transform\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [pure virtual]}}\label{class_m_t_f_1_1_tracking_body_ab5671b57af282b1133332d2f55896835}
+
+
+\-Pure virtual method for retrieving a transform matrix for a tracking device's position and orientation. 
+
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Matrix4}{p.}{class_m_t_f_1_1_matrix4} containing the transform matrix of the tracking device 
+\end{DoxyReturn}
+
+
+\-Implemented in {\bf \-M\-T\-F\-::\-Wand} \doxyref{}{p.}{class_m_t_f_1_1_wand_ae7d34626394f9ba46dde47e403cbdfe9}, and {\bf \-M\-T\-F\-::\-Head} \doxyref{}{p.}{class_m_t_f_1_1_head_a0d96199c522ca53250c0a3ee5128f7c9}.
+
+\index{\-M\-T\-F\-::\-Tracking\-Body@{\-M\-T\-F\-::\-Tracking\-Body}!\-Get\-Up\-Vector@{\-Get\-Up\-Vector}}
+\index{\-Get\-Up\-Vector@{\-Get\-Up\-Vector}!MTF::TrackingBody@{\-M\-T\-F\-::\-Tracking\-Body}}
+\subsubsection[{\-Get\-Up\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Vector3} \-M\-T\-F\-::\-Tracking\-Body\-::\-Get\-Up\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [pure virtual]}}\label{class_m_t_f_1_1_tracking_body_aa7f2dda6048dcac6a2af6bf318953986}
+
+
+\-Pure virtual method for retrieving the up direction of a tracking device. 
+
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Vector3}{p.}{class_m_t_f_1_1_vector3} containing the up direction of the tracking device 
+\end{DoxyReturn}
+
+
+\-Implemented in {\bf \-M\-T\-F\-::\-Wand} \doxyref{}{p.}{class_m_t_f_1_1_wand_adec4258eac70ecd23cc318b9d7262857}, and {\bf \-M\-T\-F\-::\-Head} \doxyref{}{p.}{class_m_t_f_1_1_head_a73f1565724fec61547b5d3cd873b87f0}.
+
+\index{\-M\-T\-F\-::\-Tracking\-Body@{\-M\-T\-F\-::\-Tracking\-Body}!\-Get\-View\-Vector@{\-Get\-View\-Vector}}
+\index{\-Get\-View\-Vector@{\-Get\-View\-Vector}!MTF::TrackingBody@{\-M\-T\-F\-::\-Tracking\-Body}}
+\subsubsection[{\-Get\-View\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-Vector3} \-M\-T\-F\-::\-Tracking\-Body\-::\-Get\-View\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [pure virtual]}}\label{class_m_t_f_1_1_tracking_body_a73542fbb193e4b5d0b78561ca9970f8e}
+
+
+\-Pure virtual method for retrieving the view direction of a tracking device. 
+
+\begin{DoxyReturn}{\-Returns}
+\doxyref{\-Vector3}{p.}{class_m_t_f_1_1_vector3} containing the view vector of the tracking device 
+\end{DoxyReturn}
+
+
+\-Implemented in {\bf \-M\-T\-F\-::\-Wand} \doxyref{}{p.}{class_m_t_f_1_1_wand_a822ae3283212605d68a275c181bdbc95}, and {\bf \-M\-T\-F\-::\-Head} \doxyref{}{p.}{class_m_t_f_1_1_head_af55587ae2636231ddf56fd191562f24d}.
+
+\index{\-M\-T\-F\-::\-Tracking\-Body@{\-M\-T\-F\-::\-Tracking\-Body}!\-Is\-Tracked@{\-Is\-Tracked}}
+\index{\-Is\-Tracked@{\-Is\-Tracked}!MTF::TrackingBody@{\-M\-T\-F\-::\-Tracking\-Body}}
+\subsubsection[{\-Is\-Tracked}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool \-M\-T\-F\-::\-Tracking\-Body\-::\-Is\-Tracked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  [pure virtual]}}\label{class_m_t_f_1_1_tracking_body_a6ec6361dbe9c80346301c47539148928}
+
+
+\-Pure virtual method for checking if a tracking device is currently tracked. 
+
+\begin{DoxyReturn}{\-Returns}
+\-A bool that indicates if the tracking device is being tracked 
+\end{DoxyReturn}
+
+
+\-Implemented in {\bf \-M\-T\-F\-::\-Wand} \doxyref{}{p.}{class_m_t_f_1_1_wand_a025e47b080b17b3718e34f0a3bd80b0e}, and {\bf \-M\-T\-F\-::\-Head} \doxyref{}{p.}{class_m_t_f_1_1_head_a9674eae8a77b72f13c71ab2aaec9080b}.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+{\bf \-Tracking\-Body.\-h}\end{DoxyCompactItemize}

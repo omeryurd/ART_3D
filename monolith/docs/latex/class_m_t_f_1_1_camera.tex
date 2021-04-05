@@ -1,0 +1,596 @@
+\section{\-M\-T\-F\-:\-:\-Camera \-Class \-Reference}
+\label{class_m_t_f_1_1_camera}\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}}
+
+
+\-This class contains the camera that should be used for navigating a scene.  
+
+
+
+
+{\ttfamily \#include $<$\-Camera.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf \-Camera} ({\bf \-Display} $\ast$display, double near\-Plane, double far\-Plane)
+\begin{DoxyCompactList}\small\item\em \doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} \-Constructor. \end{DoxyCompactList}\item 
+{\bf \-Camera} ({\bf \-Display} $\ast$display, double near\-Plane, double far\-Plane, {\bf \-Vector3} camera\-Position, double yaw, double pitch)
+\begin{DoxyCompactList}\small\item\em \doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} \-Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\-Camera} ()
+\begin{DoxyCompactList}\small\item\em \doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} \-Destructor. \end{DoxyCompactList}\item 
+{\bf \-Matrix4} {\bf \-Get\-View\-Matrix} ({\bf \-Eye\-::\-E\-Y\-E\-T\-Y\-P\-E} eye, {\bf \-Tracking\-Body} $\ast$tracking\-Body)
+\begin{DoxyCompactList}\small\item\em \-Returns a view matrix for the given parameters. \end{DoxyCompactList}\item 
+{\bf \-Matrix4} {\bf \-Get\-View\-Matrix} ({\bf \-Eye\-::\-E\-Y\-E\-T\-Y\-P\-E} eye)
+\begin{DoxyCompactList}\small\item\em \-Returns a view matrix for the given parameters. \end{DoxyCompactList}\item 
+{\bf \-Matrix4} {\bf \-Get\-View\-Matrix} ()
+\begin{DoxyCompactList}\small\item\em \-Returns a view matrix for monoscopic rendering. \end{DoxyCompactList}\item 
+{\bf \-Matrix4} {\bf \-Get\-Projection\-Matrix} ({\bf \-Eye\-::\-E\-Y\-E\-T\-Y\-P\-E} eye, {\bf \-Tracking\-Body} $\ast$tracking\-Body)
+\begin{DoxyCompactList}\small\item\em \-Returns a projection matrix for the given parameters. \end{DoxyCompactList}\item 
+{\bf \-Matrix4} {\bf \-Get\-Projection\-Matrix} ({\bf \-Eye\-::\-E\-Y\-E\-T\-Y\-P\-E} eye)
+\begin{DoxyCompactList}\small\item\em \-Returns a projection matrix for the given parameters. \end{DoxyCompactList}\item 
+{\bf \-Matrix4} {\bf \-Get\-Projection\-Matrix} ()
+\begin{DoxyCompactList}\small\item\em \-Returns a projection matrix for the given parameters. \end{DoxyCompactList}\item 
+void {\bf \-Set\-Pitch} (double pitch)
+\begin{DoxyCompactList}\small\item\em \-Sets the pitch for the camera. \end{DoxyCompactList}\item 
+void {\bf \-Set\-Yaw} (double yaw)
+\begin{DoxyCompactList}\small\item\em \-Sets the yaw for the camera. \end{DoxyCompactList}\item 
+void {\bf \-Set\-Position} ({\bf \-Vector3} position)
+\begin{DoxyCompactList}\small\item\em \-Sets the position of the camera. \end{DoxyCompactList}\item 
+void {\bf \-Adjust\-Pitch} (double pitch)
+\begin{DoxyCompactList}\small\item\em \-Adjusts the pitch of the camera. \end{DoxyCompactList}\item 
+void {\bf \-Adjust\-Yaw} (double yaw)
+\begin{DoxyCompactList}\small\item\em \-Sets the yaw for the camera. \end{DoxyCompactList}\item 
+void {\bf \-Move\-Forward} (double amount)
+\begin{DoxyCompactList}\small\item\em \-Moves the position of the camera forward. \end{DoxyCompactList}\item 
+void {\bf \-Move\-Backward} (double amount)
+\begin{DoxyCompactList}\small\item\em \-Moves the position of the camera forward. \end{DoxyCompactList}\item 
+void {\bf \-Move\-Right} (double amount)
+\begin{DoxyCompactList}\small\item\em \-Moves the position of the camera to the right. \end{DoxyCompactList}\item 
+void {\bf \-Move\-Left} (double amount)
+\begin{DoxyCompactList}\small\item\em \-Moves the position of the camera to the left. \end{DoxyCompactList}\item 
+void {\bf \-Move\-Up} (double amount)
+\begin{DoxyCompactList}\small\item\em \-Moves the position of the camera up. \end{DoxyCompactList}\item 
+void {\bf \-Move\-Down} (double amount)
+\begin{DoxyCompactList}\small\item\em \-Moves the position of the camera down. \end{DoxyCompactList}\item 
+double {\bf \-Get\-Pitch} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the camera's current pitch. \end{DoxyCompactList}\item 
+double {\bf \-Get\-Yaw} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the camera's current yaw. \end{DoxyCompactList}\item 
+{\bf \-Vector3} {\bf \-Get\-Position} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the camera's current position. \end{DoxyCompactList}\item 
+{\bf \-Vector3} {\bf \-Get\-View\-Vector} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the camera's current view vector. \end{DoxyCompactList}\item 
+{\bf \-Vector3} {\bf \-Get\-Up\-Vector} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the camera's current up vector. \end{DoxyCompactList}\item 
+{\bf \-Vector3} {\bf \-Get\-Right\-Vector} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the camera's current right vector. \end{DoxyCompactList}\item 
+{\bf \-Display} $\ast$ {\bf \-Get\-Display} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the \doxyref{\-Display}{p.}{class_m_t_f_1_1_display} that has been assigned to the camera. \end{DoxyCompactList}\item 
+void {\bf \-Set\-Camera} ({\bf \-Vector3} position, {\bf \-Vector3} view, {\bf \-Vector3} right, {\bf \-Vector3} up)
+\begin{DoxyCompactList}\small\item\em \-Sets this camera to the passed in parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This class contains the camera that should be used for navigating a scene. 
+
+\-This class provides a way to specify the position and orientation of a camera. \-Based on this information, one can acquire the view and projection matrices for a left, right, or monoscopic eye. \-These \doxyref{\-Matrix4}{p.}{class_m_t_f_1_1_matrix4} matrices should be used when rendering to produce the proper stereoscopic and/or head tracking experience.
+
+\-If you are using another library to handle the camera movements, then you must do one of the following\-: \-Copy the other library's camera parameters (position, view, up) to the \doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} camera or copy the monolith camera parameters to the library's camera. \-Failure to do this will either mean head/wand tracking will not work properly, or the rendering on the screen won't match the head/wand position or orientation. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Camera@{\-Camera}}
+\index{\-Camera@{\-Camera}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}\-M\-T\-F\-::\-Camera\-::\-Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Display} $\ast$}]{display, }
+\item[{double}]{near\-Plane, }
+\item[{double}]{far\-Plane}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_ae1562a29caffc724be56a15d4ad319b3}
+
+
+\doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} \-Constructor. 
+
+\-Creates a camera object from the given parameters. \-The camera's position defaults to the origin and the yaw and pitch default to zero.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em display} & \-Pointer to \doxyref{\-Display}{p.}{class_m_t_f_1_1_display} object containing screen information \\
+\hline
+{\em near\-Plane} & \-Double value for the near plane distance. \-Must be a positive value. \\
+\hline
+{\em far\-Plane} & \-Double value for the far plane distance. \-Must be greater than the near plane \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Camera@{\-Camera}}
+\index{\-Camera@{\-Camera}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}\-M\-T\-F\-::\-Camera\-::\-Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Display} $\ast$}]{display, }
+\item[{double}]{near\-Plane, }
+\item[{double}]{far\-Plane, }
+\item[{{\bf \-Vector3}}]{camera\-Position, }
+\item[{double}]{yaw, }
+\item[{double}]{pitch}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a469f1a1ce30725f8bfb6292802ca05b2}
+
+
+\doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} \-Constructor. 
+
+\-Creates a camera object from the given parameters. \-This constructor allows the setting of all modifiable parameters that influence the camera.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em display} & \-Pointer to \doxyref{\-Display}{p.}{class_m_t_f_1_1_display} object containing screen information \\
+\hline
+{\em near\-Plane} & \-Double value for the near plane distance. \-Must be a positive value. \\
+\hline
+{\em far\-Plane} & \-Double value for the far plane distance. \-Must be greater than the near plane \\
+\hline
+{\em camera\-Position} & \doxyref{\-Vector3}{p.}{class_m_t_f_1_1_vector3} that contains the x, y, and z values for the camera's initial position \\
+\hline
+{\em yaw} & \-Double value that contains the amount of rotation around the \-Y-\/axis. \-Value is expected in degrees. \\
+\hline
+{\em pitch} & \-Double value that contains the amount of rotation around the \-X-\/axis. \-Value is expected in degrees. \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!$\sim$\-Camera@{$\sim$\-Camera}}
+\index{$\sim$\-Camera@{$\sim$\-Camera}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{$\sim$\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}\-M\-T\-F\-::\-Camera\-::$\sim$\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a8dbf31c45e4489c043da6ed92ca6d298}
+
+
+\doxyref{\-Camera}{p.}{class_m_t_f_1_1_camera} \-Destructor. 
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Adjust\-Pitch@{\-Adjust\-Pitch}}
+\index{\-Adjust\-Pitch@{\-Adjust\-Pitch}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Adjust\-Pitch}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Adjust\-Pitch (
+\begin{DoxyParamCaption}
+\item[{double}]{pitch}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_ae632f8c5143ae9b325acdaeb7b558b61}
+
+
+\-Adjusts the pitch of the camera. 
+
+\-The value passed in for pitch is added to the camera's current pitch.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em pitch} & \-Expected value is the degrees of rotation (clockwise) around the +x axis \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Adjust\-Yaw@{\-Adjust\-Yaw}}
+\index{\-Adjust\-Yaw@{\-Adjust\-Yaw}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Adjust\-Yaw}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Adjust\-Yaw (
+\begin{DoxyParamCaption}
+\item[{double}]{yaw}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a016d67ed48e1827ff329ac60adab8b73}
+
+
+\-Sets the yaw for the camera. 
+
+\-The value passed in for yaw is added to the camera's current yaw.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em yaw} & \-Expected value is the degrees of rotation (counter-\/clockwise) around the +y axis \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-Display@{\-Get\-Display}}
+\index{\-Get\-Display@{\-Get\-Display}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-Display}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Display} $\ast$ \-M\-T\-F\-::\-Camera\-::\-Get\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_ad13e49d71b5cf45a664b27e8580bb6fa}
+
+
+\-Returns the \doxyref{\-Display}{p.}{class_m_t_f_1_1_display} that has been assigned to the camera. 
+
+\begin{DoxyReturn}{\-Returns}
+\-A pointer to the \doxyref{\-Display}{p.}{class_m_t_f_1_1_display} assigned to this camera 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-Pitch@{\-Get\-Pitch}}
+\index{\-Get\-Pitch@{\-Get\-Pitch}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-Pitch}]{\setlength{\rightskip}{0pt plus 5cm}double \-M\-T\-F\-::\-Camera\-::\-Get\-Pitch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a0381adcb8494f00c40e8f3f7f8c62dc4}
+
+
+\-Returns the camera's current pitch. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The current pitch for the camera in degrees 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-Position@{\-Get\-Position}}
+\index{\-Get\-Position@{\-Get\-Position}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Vector3} \-M\-T\-F\-::\-Camera\-::\-Get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a019758750635bc93ac136dc7661be42e}
+
+
+\-Returns the camera's current position. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The camera's current position in object space 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-Projection\-Matrix@{\-Get\-Projection\-Matrix}}
+\index{\-Get\-Projection\-Matrix@{\-Get\-Projection\-Matrix}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-Projection\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Matrix4} \-M\-T\-F\-::\-Camera\-::\-Get\-Projection\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Eye\-::\-E\-Y\-E\-T\-Y\-P\-E}}]{eye, }
+\item[{{\bf \-Tracking\-Body} $\ast$}]{tracking\-Body}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a39475df6e41b796b73710ee0957b9336}
+
+
+\-Returns a projection matrix for the given parameters. 
+
+\-This method should be used when you are performing a stereoscopic rendering and wish to render the correct perspective and eye seperation based on a tracking device.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em eye} & \-An enum from the \doxyref{\-Eye}{p.}{class_m_t_f_1_1_eye} class which indicates which eye we are wanting to create a projection matrix for. \\
+\hline
+{\em tracking\-Body} & \-A pointer to a \doxyref{\-Tracking\-Body}{p.}{class_m_t_f_1_1_tracking_body} object. \-You can pass in either the head or wand, once casted properly.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A \doxyref{\-Matrix4}{p.}{class_m_t_f_1_1_matrix4} object which contains a valid projection matrix for the given parameters 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-Projection\-Matrix@{\-Get\-Projection\-Matrix}}
+\index{\-Get\-Projection\-Matrix@{\-Get\-Projection\-Matrix}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-Projection\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Matrix4} \-M\-T\-F\-::\-Camera\-::\-Get\-Projection\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Eye\-::\-E\-Y\-E\-T\-Y\-P\-E}}]{eye}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a40ff74f38634aee7ebed3a56d6f1b6fc}
+
+
+\-Returns a projection matrix for the given parameters. 
+
+\-This method should be used when you are performing a stereoscopic rendering or monoscopic rendering and head tracking is not needed
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em eye} & \-An enum from the \doxyref{\-Eye}{p.}{class_m_t_f_1_1_eye} class which indicates which eye we are wanting to create a projection matrix for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A \doxyref{\-Matrix4}{p.}{class_m_t_f_1_1_matrix4} object which contains a valid projection matrix for the given parameters 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-Projection\-Matrix@{\-Get\-Projection\-Matrix}}
+\index{\-Get\-Projection\-Matrix@{\-Get\-Projection\-Matrix}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-Projection\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Matrix4} \-M\-T\-F\-::\-Camera\-::\-Get\-Projection\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a7bca93c3f007828c02cb81789207d29d}
+
+
+\-Returns a projection matrix for the given parameters. 
+
+\-This method is only useful for monoscopic rendering without head tracking
+
+\begin{DoxyReturn}{\-Returns}
+\-A \doxyref{\-Matrix4}{p.}{class_m_t_f_1_1_matrix4} object which contains a valid projection matrix for the given parameters 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-Right\-Vector@{\-Get\-Right\-Vector}}
+\index{\-Get\-Right\-Vector@{\-Get\-Right\-Vector}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-Right\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Vector3} \-M\-T\-F\-::\-Camera\-::\-Get\-Right\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a88b19f773c394ec25766b10df4dd8df0}
+
+
+\-Returns the camera's current right vector. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The camera's current right vector in object space 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-Up\-Vector@{\-Get\-Up\-Vector}}
+\index{\-Get\-Up\-Vector@{\-Get\-Up\-Vector}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-Up\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Vector3} \-M\-T\-F\-::\-Camera\-::\-Get\-Up\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_ad07af9f4505a8e510ada2dd5b56e7144}
+
+
+\-Returns the camera's current up vector. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The camera's current up vector in object space 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-View\-Matrix@{\-Get\-View\-Matrix}}
+\index{\-Get\-View\-Matrix@{\-Get\-View\-Matrix}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-View\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Matrix4} \-M\-T\-F\-::\-Camera\-::\-Get\-View\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Eye\-::\-E\-Y\-E\-T\-Y\-P\-E}}]{eye, }
+\item[{{\bf \-Tracking\-Body} $\ast$}]{tracking\-Body}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a2a05cc6c8309946b07d9c69af3afdcc2}
+
+
+\-Returns a view matrix for the given parameters. 
+
+\-This method should be used when you are performing a stereoscopic rendering and wish to render the correct perspective and eye seperation based on a tracking device.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em eye} & \-An enum from the \doxyref{\-Eye}{p.}{class_m_t_f_1_1_eye} class which indicates which eye we are wanting to create a view matrix for. \\
+\hline
+{\em tracking\-Body} & \-A pointer to a \doxyref{\-Tracking\-Body}{p.}{class_m_t_f_1_1_tracking_body} object. \-You can pass in either the head or wand, once casted properly.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A \doxyref{\-Matrix4}{p.}{class_m_t_f_1_1_matrix4} object which contains a valid view matrix for the given parameters 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-View\-Matrix@{\-Get\-View\-Matrix}}
+\index{\-Get\-View\-Matrix@{\-Get\-View\-Matrix}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-View\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Matrix4} \-M\-T\-F\-::\-Camera\-::\-Get\-View\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Eye\-::\-E\-Y\-E\-T\-Y\-P\-E}}]{eye}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_ae0bb27f264858327bb57d953e29d6dac}
+
+
+\-Returns a view matrix for the given parameters. 
+
+\-This method should be used when you are performing a stereoscopic rendering or monoscopic rendering and head tracking is not needed
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em eye} & \-An enum from the \doxyref{\-Eye}{p.}{class_m_t_f_1_1_eye} class which indicates which eye we are wanting to create a view matrix for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A \doxyref{\-Matrix4}{p.}{class_m_t_f_1_1_matrix4} object which contains a valid view matrix for the given parameters 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-View\-Matrix@{\-Get\-View\-Matrix}}
+\index{\-Get\-View\-Matrix@{\-Get\-View\-Matrix}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-View\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Matrix4} \-M\-T\-F\-::\-Camera\-::\-Get\-View\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a02f90426f4bbd71873c78c16ac85ebdd}
+
+
+\-Returns a view matrix for monoscopic rendering. 
+
+\-This method is only useful for monoscopic rendering without head tracking
+
+\begin{DoxyReturn}{\-Returns}
+\-A \doxyref{\-Matrix4}{p.}{class_m_t_f_1_1_matrix4} object which contains a valid view matrix for the given parameters 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-View\-Vector@{\-Get\-View\-Vector}}
+\index{\-Get\-View\-Vector@{\-Get\-View\-Vector}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-View\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Vector3} \-M\-T\-F\-::\-Camera\-::\-Get\-View\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a0311bda151104296dd0fbd60f599d992}
+
+
+\-Returns the camera's current view vector. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The camera's current view vector (direction camera is facing) in object space 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Get\-Yaw@{\-Get\-Yaw}}
+\index{\-Get\-Yaw@{\-Get\-Yaw}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Get\-Yaw}]{\setlength{\rightskip}{0pt plus 5cm}double \-M\-T\-F\-::\-Camera\-::\-Get\-Yaw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_ab2692b23e51133aefe970c895d26f90e}
+
+
+\-Returns the camera's current yaw. 
+
+\begin{DoxyReturn}{\-Returns}
+\-The current yaw for the camera in degrees 
+\end{DoxyReturn}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Move\-Backward@{\-Move\-Backward}}
+\index{\-Move\-Backward@{\-Move\-Backward}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Move\-Backward}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Move\-Backward (
+\begin{DoxyParamCaption}
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a9b4a3409a41360f6e118eb5089c2faeb}
+
+
+\-Moves the position of the camera forward. 
+
+\-The position of the camera is moved forward by the amount specified in the direction of the current view vector.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em amount} & \-Number of units to move the camera forward. \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Move\-Down@{\-Move\-Down}}
+\index{\-Move\-Down@{\-Move\-Down}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Move\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Move\-Down (
+\begin{DoxyParamCaption}
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a694a0a521b8a39ffe19ab4dacf314c03}
+
+
+\-Moves the position of the camera down. 
+
+\-The position of the camera is moved down by the amount specified in the opposite direction of the current up vector.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em amount} & \-Number of units to move the camera down. \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Move\-Forward@{\-Move\-Forward}}
+\index{\-Move\-Forward@{\-Move\-Forward}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Move\-Forward}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Move\-Forward (
+\begin{DoxyParamCaption}
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_accab9db4b54144bc71313b242f846285}
+
+
+\-Moves the position of the camera forward. 
+
+\-The position of the camera is moved forward by the amount specified in the direction of the current view vector.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em amount} & \-Number of units to move the camera forward. \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Move\-Left@{\-Move\-Left}}
+\index{\-Move\-Left@{\-Move\-Left}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Move\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Move\-Left (
+\begin{DoxyParamCaption}
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a8378a9238203080ab35eb9cd46b5b5f5}
+
+
+\-Moves the position of the camera to the left. 
+
+\-The position of the camera is moved left by the amount specified in the direction opposite of the current right vector.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em amount} & \-Number of units to move the camera to the left. \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Move\-Right@{\-Move\-Right}}
+\index{\-Move\-Right@{\-Move\-Right}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Move\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Move\-Right (
+\begin{DoxyParamCaption}
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a09995990146a7c1657202dbd2630e66e}
+
+
+\-Moves the position of the camera to the right. 
+
+\-The position of the camera is moved right by the amount specified in the direction of the current right vector.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em amount} & \-Number of units to move the camera to the right. \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Move\-Up@{\-Move\-Up}}
+\index{\-Move\-Up@{\-Move\-Up}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Move\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Move\-Up (
+\begin{DoxyParamCaption}
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_abab5dbb3cc3a461539235fb3ca11a4fe}
+
+
+\-Moves the position of the camera up. 
+
+\-The position of the camera is moved up by the amount specified in the direction of the current up vector.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em amount} & \-Number of units to move the camera up. \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Set\-Camera@{\-Set\-Camera}}
+\index{\-Set\-Camera@{\-Set\-Camera}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Set\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Set\-Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Vector3}}]{position, }
+\item[{{\bf \-Vector3}}]{view, }
+\item[{{\bf \-Vector3}}]{right, }
+\item[{{\bf \-Vector3}}]{up}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_ab312c90ac75912e3c51ea11f285854a6}
+
+
+\-Sets this camera to the passed in parameters. 
+
+\-This method can be used when synchronizing this camera with a camera not part of the \doxyref{\-Monolith}{p.}{class_m_t_f_1_1_monolith} framework.
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em position} & \-The position the camera should be located \\
+\hline
+{\em view} & \-The direction the camera is to face \\
+\hline
+{\em right} & \-The direction to the right of the camera (should be orthogonal to the view) \\
+\hline
+{\em up} & \-The direction up from the camera (should be orthogonal to the view and right vectors) \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Set\-Pitch@{\-Set\-Pitch}}
+\index{\-Set\-Pitch@{\-Set\-Pitch}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Set\-Pitch}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Set\-Pitch (
+\begin{DoxyParamCaption}
+\item[{double}]{pitch}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a01d57f952de458774e9da0dc70143b65}
+
+
+\-Sets the pitch for the camera. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em pitch} & \-Expected value is the degrees of rotation (clockwise) around the +x axis \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Set\-Position@{\-Set\-Position}}
+\index{\-Set\-Position@{\-Set\-Position}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Set\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Vector3}}]{position}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a2ea877da52d52eefe94257cb4a142c8f}
+
+
+\-Sets the position of the camera. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em position} & \-Position of the camera in object space \\
+\hline
+\end{DoxyParams}
+\index{\-M\-T\-F\-::\-Camera@{\-M\-T\-F\-::\-Camera}!\-Set\-Yaw@{\-Set\-Yaw}}
+\index{\-Set\-Yaw@{\-Set\-Yaw}!MTF::Camera@{\-M\-T\-F\-::\-Camera}}
+\subsubsection[{\-Set\-Yaw}]{\setlength{\rightskip}{0pt plus 5cm}void \-M\-T\-F\-::\-Camera\-::\-Set\-Yaw (
+\begin{DoxyParamCaption}
+\item[{double}]{yaw}
+\end{DoxyParamCaption}
+)}\label{class_m_t_f_1_1_camera_a1fb583bed2a845dd65c8716677766f35}
+
+
+\-Sets the yaw for the camera. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em yaw} & \-Expected value is the degrees of rotation (counter-\/clockwise) around the +y axis \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+{\bf \-Camera.\-h}\item 
+{\bf \-Camera.\-cpp}\end{DoxyCompactItemize}
